@@ -53,6 +53,13 @@
   </ul>
 </details>
 
+<details>
+<summary>React</summary>
+  <ul>
+    <li><a href="./index.js">React</a></li>
+  </ul>
+</details>
+
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
@@ -82,20 +89,23 @@ To get a local copy up and running, follow these steps.
 In order to run this project you need:
 
 - code editor(I use VSCODE)
+- GitHub account
+- Modern browser
+- Node.js installed
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-Enter: git@github.com:George7h/math-magician.git in your terminal.
+Enter: > git clone git@github.com:George7h/math-magician.git in your terminal.
 
 
 ### Usage
 
 Run the following commands in the terminal:
 
-- npm install
-- npm start
+- > npm install
+- >npm start
 
 The browser will automatically open the website.
 
@@ -123,7 +133,7 @@ To run tests, run the following command: npm run test
 
 - [ ] **[Watchlist]**
 - [ ] **[Catagories]**
-- [ ] **[Progressbar]**
+- [ ] **[Progress bar]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
