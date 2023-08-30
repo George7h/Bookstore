@@ -8,8 +8,18 @@ const HomePage = () => {
   const dispatch = useDispatch();
   const books = useSelector((state) => state.books);
 
+  const getNextItemId = () => {
+    if (books.length === 0) {
+      return 'item1';
+    }
+    const lastItemId = books[books.length - 1].id;
+    const lastItemNumber = parseInt(lastItemId.replace('item', ''), 10);
+    return `item${lastItemNumber + 1}`;
+  };
+
   const handleAddBook = (newBook) => {
-    dispatch(addBook(newBook));
+    const newBookWithId = { ...newBook, id: getNextItemId() };
+    dispatch(addBook(newBookWithId));
   };
 
   const handleDeleteBook = (bookId) => {
