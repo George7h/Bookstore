@@ -5,17 +5,14 @@ import DeleteBookButton from './deleteBookButton';
 const Book = ({ book, onDelete }) => (
   <div className="book">
     <p>
-      Title:
       {' '}
       {book.title}
     </p>
     <p>
-      Author:
       {' '}
       {book.author}
     </p>
     <p>
-      Category:
       {' '}
       {book.category}
     </p>

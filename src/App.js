@@ -4,15 +4,16 @@ import {
 } from 'react-router-dom';
 import HomePage from './routes/homepage';
 import CategoriesPage from './routes/catagory';
+import './App.css';
 
 const App = () => (
   <Router>
     <div className="app">
       <nav>
         <div className="appName">
-          <h1>Bookstore</h1>
+          <h1>Bookstore CMS</h1>
         </div>
-        <ul>
+        <ul className="nav-list">
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -20,6 +21,9 @@ const App = () => (
             <Link to="/categories">Categories</Link>
           </li>
         </ul>
+        <span className="material-symbols-outlined">
+          account_circle
+        </span>
       </nav>
       <Routes>
         <Route path="/" element={<HomePage />} />
