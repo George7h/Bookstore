@@ -6,8 +6,7 @@ const CategoriesPage = () => {
 
   return (
     <div>
-      <h2>Categories Page</h2>
-      <p>{categories}</p>
+      <p className="construction">{categories}</p>
     </div>
   );
 };
