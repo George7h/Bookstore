@@ -10,15 +10,13 @@ const App = () => (
   <Router>
     <div className="app">
       <nav>
-        <div className="appName">
-          <h1>Bookstore CMS</h1>
-        </div>
         <ul className="nav-list">
-          <li>
-            <Link to="/">Home</Link>
+          <li className="appName"><h3>Bookstore CMS</h3></li>
+          <li className="nav-link">
+            <Link to="/">BOOKS</Link>
           </li>
-          <li>
-            <Link to="/categories">Categories</Link>
+          <li className="nav-link">
+            <Link to="/categories">CATEGORIES</Link>
           </li>
         </ul>
         <span className="material-symbols-outlined">
